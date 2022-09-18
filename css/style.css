@@ -4,5 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    /*border: none;*/
+    border: none;
+}
+
+.block{
+    width: 400px;
+    padding: 100px;
+    background: lightgray;
+
 }
