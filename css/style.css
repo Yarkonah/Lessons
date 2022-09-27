@@ -1,26 +1,101 @@
-*,body,html{
+*,body,html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
     /*border: none;*/
+    /*.box{*/
+    /*    height: 700px;*/
+    /*    !*background-color: #000;*!*/
+    /*    !*background-image: url();*!*/
+    /*    !*background-size: cover;*!*/
+    /*    !*background-size: contain;*!*/
+    /*    !*background-size: 70%;*!*/
+    /*    !*background-size: 500px;*!*/
+    /*    !*background-repeat: no-repeat;*!*/
+    /*    !*background-position: center bottom;*!*/
+    /*    !*background-position: 200px 10%;*!*/
+    /*    !*background-position-x: 0 ;*!*/
+    /*    background:*/
+    /*    url("") no-repeat center right/50%,*/
+    /*    url("") no-repeat center left/30%,*/
+    /*    red;*/
+    /*}*/
+
+
 .box{
-    height: 700px;
-    /*background-color: #000;*/
-    /*background-image: url();*/
-    /*background-size: cover;*/
-    /*background-size: contain;*/
-    /*background-size: 70%;*/
-    /*background-size: 500px;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center bottom;*/
-    /*background-position: 200px 10%;*/
-    /*background-position-x: 0 ;*/
-    background:
-    url("") no-repeat center right/50%,
-    url("") no-repeat center left/30%,
-    red;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    transition: 5s ease-in-out;
+}
+
+/*.box:hover{*/
+/*    background: green;*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+
+/*}*/
+
+/*.item{*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    background: green;*/
+/*}*/
+
+/*.box:hover .item{*/
+/*    background: red;*/
+/*}*/
+
+
+/*.box:active{*/
+/*    background: red;*/
+/*}*/
+
+/*.input:focus{*/
+/*    border: 10px solid pink;*/
+/*}*/
+
+/*.a:visited{*/
+/*    color: aqua;*/
+/*}*/
+
+.menu ul{
+    font-size: 0;
+}
+
+.menu-item{
+    display: inline-block;
+}
+
+.menu_item_link{
+    padding: 15px 20px;
+    background: #000;
+    display: block;
+    color: #E5E5E5;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.menu-item:hover .menu_item_link{
+    background: orange;
 }
 
 
+/*.menu-item:first-child .menu_item_link{*/
+/*    background: red;*/
+/*}*/
+
+/*.menu-item:last-child .menu_item_link{*/
+/*    background: green;*/
+/*}*/
+
+/*.menu-item:nth-child(2n) .menu_item_link{*/
+/*    background: green;*/
+/*}*/
+
+.menu-item-link::before{
+    content: '';
+}
