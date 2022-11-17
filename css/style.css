@@ -6,3 +6,111 @@
     list-style: none;
     /*border: none;*/
 }
+/*111111111111*/
+/*.block{*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    background: #000;*/
+/*    transition: 1s ease;*/
+/*    !*margin: 100px;*!*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%);*/
+/*}*/
+
+/*!*при наведении*!*/
+/*.block:hover{*/
+/*    background: teal;*/
+/*    !*transform: rotate(360deg); !*Крутится вертится мир голубой*!*!*/
+/*    !*transform: scale(2,3); !*scaleX scaleY изменение размера*!*!*/
+/*    !*transform: skew(30deg,10deg); !*Ромбик*!*!*/
+/*    !*transform: translate(100%,50px); !*размещение в другом месте*!*!*/
+/*    !*margin: 100px;*!*/
+/*}*/
+
+/*222222222222*/
+/*ul{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.list_item{*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.list_item a{*/
+/*    font-size: 22px;*/
+/*    font-weight: 700;*/
+/*    color: black;*/
+/*    padding: 20px 25px;*/
+/*    background: lightblue;*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*}*/
+
+/*.list_item a::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 0;*/
+/*    height: 5px;*/
+/*    background: green;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    !*transition: 1s ease-in;*!*/
+/*}*/
+
+/*.list_item a:hover::before{*/
+/*    width: 100%;*/
+/*}*/
+
+/*.list_item.active a::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 5px;*/
+/*    background: darkblue;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*}*/
+
+/*3333333333*/
+.sun{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border-radius: 50%;
+    position: fixed;
+    top: 100%;
+    transform: translate(0, -100%);
+    left: 0;
+    animation: moveSun 5s infinite;
+}
+
+@keyframes moveSun {
+    0%{
+
+    }
+    50%{
+        left: 50%;
+        top: 0;
+        transform: translate(-50%);
+    }
+    100%{
+        left: calc(100% - 100px);
+        background: white;
+    }
+}
+
+body{
+    background: #000;
+    animation: day 5s infinite;
+}
+
+@keyframes day {
+    from{
+        background: black;
+    }
+    to{
+        background: white;
+    }
+}
